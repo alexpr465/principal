@@ -7,5 +7,11 @@ pipeline {
       }
     }
 
+    stage('Unitarias') {
+      steps {
+        sh 'echo Unitarias'
+      }
+    }
+
   }
 }
