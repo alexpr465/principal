@@ -5,6 +5,7 @@ pipeline {
       steps {
         sh 'echo hola'
         sh 'echo \'Descargando codigo\' sh \'rm -rf *\' checkout scm'
+        sh 'echo \'compilando aplicacion\' sh \'mvn clean compile\''
       }
     }
 
