@@ -6,6 +6,9 @@ pipeline {
         sh 'echo Bienvenido a la descarga del codigo'
 		sh 'rm -rf *'
 		checkout scm
+		
+		sh 'Compilando con Maven'
+		sh 'mvn clean compile'
       }
     }
 
