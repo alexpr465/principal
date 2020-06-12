@@ -13,5 +13,11 @@ pipeline {
       }
     }
 
+    stage('Frontend') {
+      steps {
+        sh 'echo Front'
+      }
+    }
+
   }
 }
