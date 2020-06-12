@@ -4,8 +4,14 @@ pipeline {
     stage('Construir') {
       steps {
         sh 'echo hola'
-        sh 'echo \'Descargando codigo\' sh \'rm -rf *\' checkout scm'
-        sh 'echo \'compilando aplicacion\' sh \'mvn clean compile\''
+        
+		sh 'echo 'Descargando codigo' 
+		
+		sh 'rm -rf *'
+		checkout scm
+        
+		echo 'compilando aplicacion' 
+		sh 'mvn clean compile'
       }
     }
 
