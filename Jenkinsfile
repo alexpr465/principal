@@ -7,7 +7,7 @@ pipeline {
         
 		sh 'echo 'Descargando codigo' 
 		
-		sh 'rm -rf *'
+		'rm -rf *'
 		checkout scm
         
 		echo 'compilando aplicacion' 
