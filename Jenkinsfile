@@ -4,8 +4,8 @@ pipeline {
     stage('Construir') {
       steps {
         sh 'echo Bienvenido a la descarga del codigo'
-		sh 'rm -rf *'
-		checkout scm
+        sh 'rm -rf *'
+        checkout scm
       }
     }
 
